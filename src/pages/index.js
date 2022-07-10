@@ -3,16 +3,15 @@ import Banner from "../components/Banner";
 import Header from "../components/Header";
 import ProductFeed from "../components/ProductFeed";
 
-
 export default function Home({ products }) {
   return (
     <div className="bg-gray-100 h-screen">
       <Head>
-        <title>Amazon 2.0</title>
+        <title>Shop</title>
       </Head>
       <Header />
 
-      <main className="max-wscreen-2xl mx-auto">
+      <main className="max-w-screen-xl mx-auto">
         {/* Banner */}
         <Banner />
 
@@ -34,7 +33,6 @@ export async function getServerSideProps(context) {
   return {
     props: {
       products,
-
     }
   }
 }
